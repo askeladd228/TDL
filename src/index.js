@@ -1,3 +1,5 @@
+import {ProjectTab} from './project';
+
 const projectInput = document.querySelector('.inputProject');
 const projectAdd = document.querySelector('.addProject');
 const cancelButton = document.querySelector('.cancel');
@@ -19,11 +21,16 @@ const setDisplay = (() => {
 
   const addProjectName = (thing) => {
     thing.addEventListener('click', () => {
+
       let projectName = document.createElement('div');
       projectName.textContent = `${document.getElementById('projectName').value}`;
       projectName.classList.add('projectName');
       projectList.appendChild(projectName);
       document.getElementById('projectName').value = '';
+      const projectTab = ProjectTab(projectName);
+
+      projectName.addEventListener('click', projectTab.addProjectTitle);
+      projectName.addEventListener('click', projectTab.addInputs);
     });
   }
 

@@ -9,14 +9,14 @@
 </head>
 <body>
   <script src="index.bundle.js" defer></script>
+  <script src="project.bundle.js" defer></script>
   <div class="container">
     <div class="header">
       <center><h1>To-Do-List</h1></center>
     </div>
     <div class="tab">
       <h2 class="headerTwo">Project</h2>
-      <div class="projectList">
-      </div>
+      <div class="projectList"></div>
       <div class="inputProject">
         <input type="text" id = "projectName" placeholder="Insert Project Name">
         <div class="inputButtons">
@@ -27,7 +27,14 @@
       
       <div class="addProject">Add a Project</div>
     </div>
-    <div class="board"></div>
+    <div class="board">
+      <div class="headerBoard"></div>
+      <div class="taskList"></div>
+      <div class="inputBoardContainer">
+        <div class="inputBoard"></div>
+      </div>
+
+    </div>
   </div>
   
 </body>

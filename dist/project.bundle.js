@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector(".headerBoard"),document.querySelector(".board"),document.querySelector(".inputBoard"),console.log("wazzup")})();

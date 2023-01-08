@@ -13,6 +13,7 @@ html,body {
 .header {
   grid-row: 1;
   grid-column: 1/-1;
+  background-color: lightgrey;
 }
 
 .tab {
@@ -21,7 +22,7 @@ html,body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  background-color: lightgrey;
 }
 
 .board {
@@ -30,7 +31,7 @@ html,body {
 }
 
 .headerTwo {
-  border-bottom: 0.5px solid black;
+  border-bottom: 2px solid black;
 }
 
 .addProject {
@@ -88,11 +89,20 @@ html,body {
   margin-bottom: 1px solid lightgrey ;
   padding: 5px;
   transition: 300ms;
-  width: 200px;
+  width: 150px;
+  border-radius: 5px;
 }
 
 .projectName:hover {
   cursor: pointer;
-  background-color: lightgrey;
-
+  background-color: gainsboro;
 }
+
+.inputBoard {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .inputBoardContainer {
+  display: none;
+} */
