@@ -1,1 +1,1 @@
-(()=>{"use strict";document.querySelector(".headerBoard"),document.querySelector(".board"),document.querySelector(".inputBoard"),console.log("wazzup")})();
+(()=>{"use strict";document.querySelector(".headerBoard"),document.querySelector(".board"),document.querySelector(".inputBoard"),document.querySelector(".inputBoardContainer"),document.querySelector(".addTaskContainer"),document.querySelector(".taskList"),console.log("wazzup")})();

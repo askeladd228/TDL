@@ -13,7 +13,7 @@ html,body {
 .header {
   grid-row: 1;
   grid-column: 1/-1;
-  background-color: lightgrey;
+  background-color: tan;
 }
 
 .tab {
@@ -22,12 +22,14 @@ html,body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightgrey;
+  background-color: whitesmoke;
 }
 
 .board {
   grid-row: 2;
   grid-column: 2;
+  width: 800px;
+  margin-left: 80px;
 }
 
 .headerTwo {
@@ -103,6 +105,35 @@ html,body {
   flex-direction: column;
 }
 
-/* .inputBoardContainer {
+.inputBoardContainer {
   display: none;
-} */
+}
+
+.projectTitle {
+  padding: 20px;
+  font-weight: 900;
+  font-size: larger;
+  margin-left: -20px;
+}
+
+.addTask:hover {
+  cursor: pointer;
+  background-color: gainsboro;
+}
+
+.addTask {
+  transition: 500ms;
+  border-radius: 10px;
+  padding: 10px;
+  color: gray;
+}
+
+.taskContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+

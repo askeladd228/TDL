@@ -5,6 +5,10 @@ const projectAdd = document.querySelector('.addProject');
 const cancelButton = document.querySelector('.cancel');
 const confirmButton = document.querySelector('.confirm');
 const projectList = document.querySelector('.projectList');
+const taskList = document.querySelector('.taskList');
+const inputBoard = document.querySelector('.inputBoard');
+const headerBoard = document.querySelector('headerBoard');
+const addTaskContainer = document.querySelector('addTaskContainer');
 
 const setDisplay = (() => {
   const setDisplayNone = (thing) => {
@@ -29,8 +33,10 @@ const setDisplay = (() => {
       document.getElementById('projectName').value = '';
       const projectTab = ProjectTab(projectName);
 
+      projectName.addEventListener('click', projectTab.clearBoard);
       projectName.addEventListener('click', projectTab.addProjectTitle);
       projectName.addEventListener('click', projectTab.addInputs);
+      projectName.addEventListener('click', projectTab.addTaskButton);
     });
   }
 
